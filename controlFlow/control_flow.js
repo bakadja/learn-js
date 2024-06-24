@@ -9,7 +9,7 @@ if (userRole === "admin") {
     accessLevel = "No access granted";
 }
 
-console.log("Access Level:", accessLevel);
+console.log("Access Level:", accessLevel);  // Access Level: Full access granted
 
 let isLoggedIn = true;
 let userMessage;
@@ -24,7 +24,7 @@ if (isLoggedIn) {
     userMessage = "Please log in to access the system.";
 }
 
-console.log("User Message:", userMessage);
+console.log("User Message:", userMessage); // User Message: Welcome, Admin!
 
 let userType = "subscriber";
 let userCategory;
@@ -43,7 +43,7 @@ switch (userType) {
         userCategory = "Unknown";
 }
 
-console.log("User Category:", userCategory);
+console.log("User Category:", userCategory); // User Category: Subscriber
 
 /**
  * 
@@ -57,3 +57,8 @@ console.log("User Category:", userCategory);
     If userType doesn't match any defined cases ("admin", "manager", or "subscriber"), userCategory is assigned as "Unknown".
 
  */
+
+    let isAuthenticated = true;
+    let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+    console.log("Authentication Status:", authenticationStatus); // Authentication Status: Authenticated
