@@ -34,6 +34,28 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    // console.log(functionVar); // Throws ReferenceError
+    // console.log(functionLet); // Throws ReferenceError
+    // console.log(functionConst); // Throws ReferenceError
+
+
+    {
+        let myLet = "hello";
+        const myConst = "world";
+        var myVar = "!";
+        
+        // reassign these variables
+        myLet = "hi";
+        // myConst = "my Friend" // TypeError: Assignment to constant variable.
+        myVar = ":)"
+    }
+
+     //  reassign the same variables outside the block
+        
+        myLet = 1;
+        myConst = 2 ;
+        myVar = 3 ;
+    
+    // global scope variables, work fine wihtout strict mode, with strict mode it will throw an error    
+        console.log(myLet, myConst, myVar); // 1 2 3 
+    
