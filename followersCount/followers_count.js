@@ -18,7 +18,12 @@ function checkCountValue() {
       alert("Your Instagram post gained 20 followers! Keep it up!");
     }
   }
+function resetCount() {
+    count = 0;
 
+    displayCount();
+    alert("Followers count has been reset.")
+}
 
 /* L'ordre des opérations dans le code, Voici ce qui se passe étape par étape :
 
